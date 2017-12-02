@@ -1,0 +1,37 @@
+.header-font {
+    font-family: 'Amatic SC', cursive;
+}
+
+.custom-font {
+    font-family: 'Quicksand', sans-serif;    
+}
+
+#background {
+    background-color: #1C6DA9;
+    height: 650px;
+}
+
+.custom-img {
+    margin: 5% 0;
+}
+
+#validate {
+    display: none;
+}
+
+#collection-left {
+    margin-left: 20px;
+}
+
+#collection-right {
+    margin-right: 20px;
+}
+
+.custom-btn-font {
+    font-size: 125%;
+}
+
+.custom-row {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
