@@ -37,4 +37,17 @@ $(function () {
             location.reload()
         })
     })
+
+    $('.delete').on('click', function(e) {
+        e.preventDefault()
+
+        var id = $(this).data('id')
+
+        $.ajax('/api/burgers/' + id, {
+            type: 'DELETE'
+        }).then(function() {
+            console.log('deleted burger id: ' + id)
+            location.reload()
+        })
+    })
 })

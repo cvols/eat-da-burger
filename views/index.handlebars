@@ -26,7 +26,7 @@
             <h3 class="center header-font">Eaten Burgers</h3>
             <div class="collection">
                 {{#each burgers}} {{#if devoured}}
-                <a href="#!" class="collection-item custom-font">{{burger_name}}</a>
+                <a href="#!" class="delete collection-item custom-font" data-id="{{id}}">{{burger_name}}</a>
                 {{/if}} {{/each}}
             </div>
         </div>

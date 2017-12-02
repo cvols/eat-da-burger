@@ -40,7 +40,7 @@ function objToSql(ob) {
     // translate array of strings to a single comma-separated string
     return arr.toString()
 }
-
+// orm.selectall("table", func(){})
 // Object for all our SQL statement functions.
 var orm = {
     selectAll: function (tableInput, cb) {
@@ -86,7 +86,20 @@ var orm = {
 
             cb(result)
         })
-    }
+    },
+    deleteOne: function (table, condition, cb) {
+        var queryString = 'delete from ' + table
+        queryString += ' where '
+        queryString += condition
+
+        connection.query(queryString, function(err, result) {
+            if (err) {
+                throw err
+            }
+
+            cb(result)
+        }) 
+    },
 }
 
 module.exports = orm
