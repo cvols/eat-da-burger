@@ -16,7 +16,7 @@
     <div class="row custom-row">
         <div class="col s6">
             <h3 class="center header-font">UnEaten Burgers</h3>
-            <div class="collection" id="collection-left">
+            <div class="collection">
                 {{#each burgers}} {{#unless devoured}}
                 <a href="#!" class="devour collection-item custom-font" data-id="{{id}}" data-nowdevoured="{{devoured}}">{{burger_name}}</a> {{/unless}} {{/each}}
             </div>
@@ -24,7 +24,7 @@
 
         <div class="col s6">
             <h3 class="center header-font">Eaten Burgers</h3>
-            <div class="collection" id="collection-right">
+            <div class="collection">
                 {{#each burgers}} {{#if devoured}}
                 <a href="#!" class="collection-item custom-font">{{burger_name}}</a>
                 {{/if}} {{/each}}
