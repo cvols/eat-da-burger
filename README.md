@@ -1,4 +1,4 @@
-# HW  Eat-Da-Burger
+# Eat-Da-Burger
 Eat-Da-Burger is a restaurant app that lets users input and delete the names of burgers they'd like to eat
 
 ## Live Link 
