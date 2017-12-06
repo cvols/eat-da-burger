@@ -42,7 +42,7 @@ $(function () {
         e.preventDefault()
 
         var id = $(this).data('id')
-
+        
         $.ajax('/api/burgers/' + id, {
             type: 'DELETE'
         }).then(function() {
